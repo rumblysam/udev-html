@@ -6,23 +6,22 @@
                 color:blue;
                 background-color: #cef6ce;
                 width:200px;
-                position: relative;
+                position: absolute;
                 /* relative positioning means positioning it relative where it would normally be.
                 in relation to where it was/defaulted to be */
-                left:200px;
-                top:100px;
-                padding:2%;
-                z-index:3;
-                opacity: 0.75;
+                /*absolute positioning takes the element out of the flow of the page*/
+
+                left:500px;
+                top:200px;
             }
 
             #box-two {
                 background-color: #8a847f;
                 width: 200px;
                 padding:2%;
-                position:relative;
-                top:-200px;
-                z-index:1 ;
+                position: fixed;
+                /*will not move while scrolling, the element will always be in that position*/
+    
             
                 
             }

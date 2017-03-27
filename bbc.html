@@ -25,9 +25,6 @@
                 border-left: 1px #ccc solid;
                 height:100%;
             }
-            #signin-div {
-                
-            }
             .fa-user-circle {
                 height: 32px;
                 width: 32px;
@@ -149,9 +146,9 @@
 
             }
             #main-article {
-                max-width:720px;
+                max-width:1000px;
                 height:600px;
-                border-right: 1px solid #000;
+                /*border-right: 1px solid #000;*/
                 position:relative;
                 padding-right: 20px;
             }
@@ -195,11 +192,13 @@
                 color:black;
             }
             .article-body {
-                /*width:700px;*/
-                float:left;
+                width: 640px;
+                float: left;
+                border-right: 1px solid #ccc;
             }
             .article-image {
                 float:left;
+                
             }
             .article-hr {
                 border-top: 1px solid #a91717;
@@ -207,7 +206,9 @@
                 
             }
             .secondary {
-                
+                width:300px;
+                margin-left:20px;
+                float:right;
                 
             }
 
@@ -215,11 +216,30 @@
                 
                 color:#404040;
                 margin-left:20px;
+                padding-left:10px;
                 
+            }
+            .side-title a:hover {
+                 color:#1167a8;
             }
             h4 {
                 font-weight: normal;
                 font-size:24px;
+            }
+            .side-image {
+                float:left;
+                width:90px;
+                margin-right:10px;
+            }
+
+            .watch-listen-link {
+                text-decoration:none;
+                color:black;
+                font-weight: bold;
+                font-size:18px;
+            }
+            .watch-listen-link a:hover {
+               
             }
      
          
@@ -293,20 +313,18 @@
                         <p><a class="article-link" href="#">Another link</a></p>
                         <p><a class="article-link" href="#">Another link</a></p>
                     </div>
-                        <div class="article-image"><img src="http://placehold.it/400x220"></div>
+                        <div class="article-image"><img src="http://placehold.it/300x200"></div>
                 </div><!--END article-body-->
-                
+                <div class="secondary">
+                    <div id="side-articles">
+                        <h3 class="side-title">Watch/Listen</h3>
+                        <img class="side-image" src="http://placehold.it/90x50">
+                        <a class="watch-listen-link" href="">A side article lives here</a>
+                    </div>
+                </div><!--END secondary-->
+            
             </div><!--END main-article-->
-            <div class="clear"></div>
-            <div class="secondary">
-
-                <div id="side-articles">
-                    <h3 class="side-title">Watch/Listen</h3>
-                </div>
-
-            </div><!--END secondary -->
-        
-
+            
 
         </div><!--END page-container-->
 

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Technology - BBS News</title>
+        <style type="text/css">
+            #topbar {
+                width: 1000px;
+                margin: 0 auto;
+                height:40px;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #logo {
+                margin-top: 8px;
+                margin-right: 8px;
+                width: 87px;
+                float: left;
+            
+            }
+            .topbar-section {
+                float:left;
+                border-left: 1px #ccc solid;
+                height:100%;
+            }
+            #signin-div {
+                
+            }
+            .fa-user-circle {
+                height: 32px;
+                width: 32px;
+                margin: 12px 10px;
+                float: left;
+            }
+            #signin-text {
+                font-weight: bold;
+                font-size: 90%;
+                position:relative;
+                top: 12px;
+            }
+            .fa-bell {
+                margin-top: 8px;
+                padding: 5px 10px 10px 5px;
+                float:left;
+                color: #ccc;
+            }
+            #wiggle {
+                float:left;
+                height: 40px;
+                margin-top: 0;
+                margin-left:5px;
+
+            }
+            .topbar-menu {
+                font-weight: bold;
+                font-size: 90%;
+                padding: 14px 15px 0 15px;
+                height: 27px;
+            }
+            #search-box{
+                background-color: #e4e4e4;
+                border: none;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 5px;
+                margin: 5px;
+                float:left;
+                
+            }
+            .fa-search {
+                float:left;
+                margin-top:10px;
+            }
+            label {
+                margin: 0;
+                padding:0;
+            }
+            .clear {
+                clear: both;
+            }
+            h1 {
+                padding:0;
+                margin:0;
+                color:white;
+                font-size:40px;
+                font-weight:normal;
+                padding-top:10px;
+                padding-left:10px;
+                float:left;
+                
+            }
+            #local-news {
+                
+                float:right;
+                font-size:20px;
+                position:relative;
+                top:20px;
+                border: 1px solid #bb4545;
+                padding:6px;
+                margin-right:60px;
+            }
+            #local-news a {
+                color:white;
+                text-decoration: none;
+                position: relative;
+               
+            }
+            #local-news a:hover {
+                text-decoration: underline;
+            }
+            .fa-map-marker {
+                color: white;
+                
+            }
+            #menu-bar-container {
+                background-color: #bb1919;
+                width:100%;
+                height: 70px;
+            }
+            #menu-bar {
+                width:100%;
+                height:32px;
+                background-color:#a91717;
+                margin: 0 auto;
+                padding-top:10px;
+            }
+
+            .menu-bar-nav {
+                max-width:970px;
+                display: inline;
+                color: white;
+                padding-right:5px;
+                border-right: 1px solid #bb4545;
+            }
+            .menu-bar-nav a {
+                text-decoration: none;
+                color: white;
+                padding: 8px;
+            }
+            .menu-bar-nav a:hover {
+                text-decoration:underline;
+            }
+            #page-container {
+                width:100%;
+                margin:0 auto;
+                padding-left: 50px;
+
+            }
+            #main-article {
+                max-width:720px;
+                height:600px;
+                border-right: 1px solid #000;
+                position:relative;
+                padding-right: 20px;
+            }
+            h2 {
+                font-weight: normal;
+                margin-top: 40px;
+                font-size:20px;
+                border-bottom:2px solid #a91717;
+                width: 105px;
+            }
+            h3 a {
+                color:black;
+                font-size: 30px;
+                text-decoration: none;
+            }
+            h3 a:hover {
+                color:#1167a8;
+            }
+            .article-summary {
+                width:300px;
+                margin-right:5px;
+                float:left;
+            }
+            #topic-link {
+                text-decoration:none;
+                color:#a91717;
+                margin: 0 auto;
+                float:none;
+                /*padding-left: 10px;*/
+            }
+            #topic-link a:hover {
+                color:#1167a8;
+            }
+            .article-summary a:hover {
+                color:#1167a8;
+                /* margin-left:20px;*/
+                
+            }
+            .article-link {
+                text-decoration:none;
+                color:black;
+            }
+            .article-body {
+                /*width:700px;*/
+                float:left;
+            }
+            .article-image {
+                float:left;
+            }
+            .article-hr {
+                border-top: 1px solid #a91717;
+                width: 50px;
+                
+            }
+            .secondary {
+                
+                
+            }
+
+            .side-title  {
+                
+                color:#404040;
+                margin-left:20px;
+                
+            }
+            h4 {
+                font-weight: normal;
+                font-size:24px;
+            }
+     
+         
+        </style>
+        <script src="https://use.fontawesome.com/82e6b7fb50.js"></script>
+    </head>
+
+    <body>
+        <div id="topbar">
+            <img id="logo" src="images/bbclogo.png">
+            <div id="signin-div" class="topbar-section">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <span id="signin-text">Sign in</span>
+
+            </div>
+            <img src="images/wiggle-line.png" id="wiggle">
+            <i class="fa fa-bell" aria-hidden="true">
+                
+            </i>
+            
+
+            <div class="topbar-section topbar-menu">News</div>
+            <div class="topbar-section topbar-menu">Sport</div>
+            <div class="topbar-section topbar-menu">Weather</div>
+            <div class="topbar-section topbar-menu">iPlayer</div>
+            <div class="topbar-section topbar-menu">TV</div>
+            <div class="topbar-section topbar-menu">Radio</div>
+            <div class="topbar-section topbar-menu">More<i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div class="topbar-section">
+               <input id="search-box" type="text" value="Search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div><!-- END TOPBAR-->
+
+        <div class="clear"></div>
+
+        <div id="menu-bar-container">
+            <h1>NEWS</h1>
+            <div id="local-news"><a href="#">Find Local News</a> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+           
+        </div>
+        <div class="clear"></div>
+
+        <div>
+            <ul id="menu-bar">
+                <li class="menu-bar-nav"><a href="#">Home</a></li>
+                <li class="menu-bar-nav"><a href="#">UK</a></li>
+                <li class="menu-bar-nav"><a href="#">World</a></li>
+                <li class="menu-bar-nav"><a href="#">Business</a></li>
+                <li class="menu-bar-nav"><a href="#">Politics</a></li>
+                <li class="menu-bar-nav"><a href="#">Tech</a></li>
+                <li class="menu-bar-nav"><a href="#">Science</a></li>
+                <li class="menu-bar-nav"><a href="#">Health</a></li>
+                <li class="menu-bar-nav"><a href="#">Education</a></li>
+                <li class="menu-bar-nav"><a href="#">Entertainment & Arts</a></li>
+                <li class="menu-bar-nav"><a href="#">Video & Audio</a></li>
+                <li class="menu-bar-nav"><a class="menu-more" href="#"><span>More <i class="fa fa-caret-down" aria-hidden="true"></i></span></a></li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+        <div id="page-container">
+            <h2>Technology</h2>
+            <div id="main-article">
+                <h3><a href="#">Asda bug exposed payment details</a></h3>
+                <div class="article-body">
+                    <div class="article-summary">
+                        <p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</p>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 19 January 2016 | <a href="#" id="topic-link" class="article-summary"> Technology</a></p>
+                        <hr class="article-hr" align="left">
+                        <p><a class="article-link" href="#">Another link</a></p>
+                        <p><a class="article-link" href="#">Another link</a></p>
+                    </div>
+                        <div class="article-image"><img src="http://placehold.it/400x220"></div>
+                </div><!--END article-body-->
+                
+            </div><!--END main-article-->
+            <div class="clear"></div>
+            <div class="secondary">
+
+                <div id="side-articles">
+                    <h3 class="side-title">Watch/Listen</h3>
+                </div>
+
+            </div><!--END secondary -->
+        
+
+
+        </div><!--END page-container-->
+
+        
+    </body>
+</html>
